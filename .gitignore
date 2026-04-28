@@ -1,0 +1,57 @@
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+
+# Node (in case)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Terraform
+**/.terraform/
+**/*.tfstate
+**/*.tfstate.backup
+**/*.tfvars
+!**/*.tfvars.example
+**/.terraform.lock.hcl
+
+# Kubernetes / Helm
+**/charts/*.tgz
+
+# Secrets - NEVER commit these
+**/*.pem
+**/*.key
+**/*.cer
+**/*.pfx
+**/secrets.yaml
+.env
+.env.local
+*.secret
+
+# Build artifacts
+build/
+dist/
+*.log
+
+# Azure CLI
+.azure/
+
+# kubectl
+kubeconfig
+.kube/config
